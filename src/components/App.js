@@ -24,6 +24,7 @@ function App() {
       .then((r) => r.json())
       .then((items) => setListing(items));
   }, []);
+  console.log(items)
   
   function deleteListing(removedItem){
     const updatedItems = listing.filter((item) => item.id !== removedItem.id);
